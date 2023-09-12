@@ -1,0 +1,48 @@
+name: augmntx
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_native_splash: ^2.3.2
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/profileimage.jpg
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash.png
+  background_image_android: "assets/images/profileimage.jpg"
+ 
+
+
+  android_12:
+    image: assets/images/splash.png
+    color: "#FFFFFF"
+   
+   
+    
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/profileimage.jpg"
+  min_sdk_android: 21
